@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fourth</title>
+    <style>
+        .test{
+            background-color: blue;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        for (let i = 0; i < 10; i++) {
+            if(i%2==0){
+                document.write("<input type=button class=\'btn test\' value="+(i+1)+" /><br/>");
+            }else{
+                document.write("<input type=button value="+(i+1)+" /><br/>");
+            }
+        }
+        var matches=document.getElementsByClassName("test");
+        for (const e of matches) {
+            e.setAttribute("value","button"+e.getAttribute("value"))
+        }
+    </script>
+</body>
+</html>

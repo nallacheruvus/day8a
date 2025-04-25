@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleven</title>
+</head>
+<body>
+    <!--Area a-->
+    <div id="main">
+        <!--Area b-->
+        <h1 id="title">This is title</h1>
+        <p id="hint">This is a test para</p>
+        <!--Area c-->
+    </div>
+    <!--Area d-->
+    <script>
+        var nd=document.createElement("div");
+        nd.style.backgroundColor="blue";
+        var nc=document.createTextNode("Hai there whats up comostos");
+        nd.appendChild(nc);
+        var cd=document.getElementById("main");
+        document.body.insertBefore(nd,cd);
+    </script>
+</body>
+</html>

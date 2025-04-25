@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second</title>
+    <style>
+        .tester{
+            background-color: blue;
+            color: cornsilk;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Iam a button</button>
+    <br/>
+    <input type="text" id="txt" placeholder="Iam a textbox" />
+    <script>
+        var btn=document.getElementById("btn");
+        btn.setAttribute("class","tester");
+        btn.setAttribute("disabled","");
+        document.getElementById("txt").setAttribute("class","tester");
+        document.getElementById("txt").setAttribute("type","date");
+        // alert(document.documentElement.getAttribute("lang"));
+        document.body.style.backgroundColor="yellow";
+        alert(document.head.firstElementChild.nodeName);
+    </script>
+</body>
+</html>

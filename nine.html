@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nine</title>
+</head>
+<body>
+    <script>
+        var par=document.body;
+        var arr=["Einstein","Ramanujam","Bhaskaracharya","Aryabhatta","Varahimihira"];
+        var selList=document.createElement("select");
+        selList.id="mysel";
+        selList.onchange=function(){
+            alert(this.value)
+        }
+        par.append(selList);
+        for (let i = 0; i < arr.length; i++) {
+            var opt=document.createElement("option");
+            opt.value=arr[i];
+            opt.text=arr[i].toUpperCase();
+            selList.append(opt);
+        }
+    </script>
+</body>
+</html>

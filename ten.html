@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ten</title>
+</head>
+<body>
+    <script>
+        var par=document.body;
+        var arr=["red","green","blue","yellow","orange"];
+        var selList=document.createElement("select");
+        selList.id="mysel";
+        selList.onchange=function(){
+            par.style.backgroundColor=this.value
+        }
+        par.append(selList);
+        for (let i = 0; i < arr.length; i++) {
+            var opt=document.createElement("option");
+            opt.value=arr[i];
+            opt.text=arr[i].toUpperCase();
+            selList.append(opt);
+        }
+    </script> 
+</body>
+</html>

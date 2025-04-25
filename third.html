@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Third</title>
+    <style>
+        .test{
+            background-color: blue;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <p class="test">Test Para</p>
+    <div class="block test">This is a div</div>
+    <p>This is one more para</p>
+    <script>
+        var matches=document.getElementsByClassName("test");
+        document.write("No of matches is "+matches.length);
+        // matches[0].style.fontweight="bold";
+        // matches[matches.length].style.fontstyle="italic";
+        for (const e of matches) {
+            alert(e.textContent);
+        }
+    </script>
+</body>
+</html>

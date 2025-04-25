@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eight</title>
+</head>
+<body>
+    <select>
+        <option>Physics</option>
+        <option>Geo Physics</option>
+        <option>Bio Physics</option>
+        <option>Nuclear Physics</option>
+        <option>Nano Physics</option>
+    </select>
+    <script>
+        var matches=document.querySelectorAll("select option");
+        document.writeln("<ul>");
+        for (const e of matches) {
+            document.write("<li>"+e.innerHTML+"</li>")
+        }
+        document.writeln("</ul>");
+    </script>
+</body>
+</html>

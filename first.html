@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First document</title>
+</head>
+<body>
+    <a href="http://www.google.com" id="mylink" target="_blank">Google</a><br/>
+    <input type="text" id="txt" placeholder="This is place holder" />
+    <script>
+        var lnk=document.getElementById("mylink");
+        var href=lnk.getAttribute("href");
+        alert(href);
+        var targ=lnk.getAttribute("target");
+        alert(targ);
+        var aa=document.getElementById("txt").getAttribute("placeholder");
+        alert(aa);
+    </script>
+</body>
+</html>

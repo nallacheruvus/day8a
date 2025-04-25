@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fifteen</title>
+</head>
+<body>
+    <!--Update-->
+     <!--Area a--><!--before begin-->
+     <div id="main" style="border-style: groove;">
+        <!--Area b--><!--after begin-->
+        <h1 id="title">This is title</h1>
+        <p id="hint">This is a test para</p>
+        <!--Area c--><!--before end-->
+    </div>
+    <!--Area d--><!--after end-->
+    <script>
+        var pe=document.getElementById("main");
+        var old=document.getElementById("hint");
+        var np=document.createElement("p");
+        var nc=document.createTextNode("This is yet another para");
+        np.appendChild(nc);
+        pe.replaceChild(np,old);
+    </script>
+</body>
+</html>

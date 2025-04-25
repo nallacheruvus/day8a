@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            background-color: blue;
+            color: azure;
+        }
+    </style>
+</head>
+<body>
+    <!--insert-->
+     <!--Area a--><!--before begin-->
+     <div id="main" style="border-style: groove;">
+        <!--Area b--><!--after begin-->
+        <h1 id="title">This is title</h1>
+        <p id="hint">This is a test para</p>
+        <!--Area c--><!--before end-->
+    </div>
+    <!--Area d--><!--after end-->
+    <script>
+        var md=document.getElementById("main");
+        md.insertAdjacentHTML("beforebegin","<p class=\'test\'> Brand new Para in before begin</p>");
+        md.insertAdjacentHTML("afterbegin","<p class=\'test\'> Brand new Para in after begin</p>");
+        md.insertAdjacentHTML("beforeend","<p class=\'test\'> Brand new Para in before end</p>");
+        md.insertAdjacentHTML("afterend","<p class=\'test\'> Brand new Para in after end</p>");
+    </script>
+</body>
+</html>
