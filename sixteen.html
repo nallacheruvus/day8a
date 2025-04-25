@@ -14,15 +14,23 @@
         var arr=[];
         par.appendChild(lst);
         lst.id="lst";
-        fetch("https://jsonplaceholder.typicode.com/todos")
-        .then(a=>a.json())
-        .then(b=>{
+        async function myfun() {
+            let pro= new Promise((resolve, reject) => {
+                resolve("https://jsonplaceholder.typicode.com/todos")
+            });
+            let cc=await pro;
+            let bb=fetch(cc);
+            bb.then(a=>a.json())
+            .then(b=>{
             (b).forEach(e => {
                  var li=document.createElement("li");
             li.textContent=(e.id+" "+e.title);
             lst.appendChild(li);
             });
         });
+        }
+        myfun().then(console.log("Done")) ;
+      
     </script>
 </body>
 </html>
